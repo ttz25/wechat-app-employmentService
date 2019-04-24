@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/job/job",
+    "pages/train/train",
+    "pages/my/my"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "就业服务",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home",
+        "iconPath": "pages/images/ico/home.png",
+        "selectedIconPath": "pages/images/ico/home-selected.png"
+      },
+      {
+        "text": "求职",
+        "pagePath": "pages/job/job",
+        "iconPath": "pages/images/ico/job.png",
+        "selectedIconPath": "pages/images/ico/job-selected.png"
+      },
+      {
+        "text": "培训",
+        "pagePath": "pages/train/train",
+        "iconPath": "pages/images/ico/train.png",
+        "selectedIconPath": "pages/images/ico/train-selected.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "pages/images/ico/my.png",
+        "selectedIconPath": "pages/images/ico/my-selected.png"
+      }
+    ],
+    "color": "#000",
+    "selectedColor": "#1296db"
+  }
+}

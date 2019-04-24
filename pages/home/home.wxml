@@ -1,0 +1,47 @@
+<!--pages/home/home.wxml-->
+<!--顶部轮播图片 -->
+<swiper indicator-dots="true" class="head">
+  <swiper-item wx:for="{{topImages}}">
+    <image class="top-image" src="{{item}}"></image>
+  </swiper-item>
+</swiper>
+<!--功能菜单 -->
+<view class="categoryList ">
+  <view class="category-info" wx:for="{{categoryList}}">
+    <image class="category-image" src="{{item.src}}"></image>
+    <view class="category-text">{{item.name}}</view>
+  </view>
+</view>
+<!--通知文字条 -->
+<view class="example">
+  <view style="width:40rpx;height:40rpx;">
+    <image class="top-image" src="../images/notice.png"></image>
+  </view>
+  <view class="marquee_box">
+    <view class="marquee_text" style="{{orientation}}:{{marqueeDistance2}}px;font-size: {{size}}px;">
+      <text>{{text}}</text>
+      <text wx:if="{{marquee2copy_status}}" style="margin-left:{{marquee2_margin}}px;">{{text}}</text>
+    </view>
+  </view>
+</view>
+<!--中间图片 -->
+<view style="width:100%;height:200rpx;">
+  <image class="top-image" src="{{middleImg}}"></image>
+</view>
+
+<!--政策文件 -->
+<view class="document">
+  <view class="title">
+    <view class="color-bar"></view>
+    <view>政策文件</view>
+    <view class  = "more">更多</view>
+  </view>
+  <view class= "content">
+  <view class="fileList"></view>
+  </view>
+</view>
+
+<!--培训课程 -->
+<view></view>
+<!--最新岗位 -->
+<view></view>
