@@ -55,7 +55,7 @@
 
 .document{
   margin:10rpx 0;
-  height:200rpx;
+  height:300rpx;
 }
 
 .title{
@@ -77,4 +77,24 @@
   text-decoration:underline;
   color:#999;
   font-size: 15px;
+}
+
+.fileList{
+  margin:20rpx 0;
+}
+
+.file-info{
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin :10rpx 0;
+  font-size: 14px;
+  letter-spacing:0.2em;
+}
+
+.course{
+  margin:20rpx 0;
+  height:200rpx;
+  border:10rpx 10rpx solid #999;
 }
