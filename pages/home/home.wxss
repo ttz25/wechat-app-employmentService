@@ -73,7 +73,7 @@
 
 .more{
   display: inline-block;
-  margin-left: 450rpx;
+  margin-left: 480rpx;
   text-decoration:underline;
   color:#999;
   font-size: 15px;
@@ -97,4 +97,24 @@
   margin:20rpx 0;
   height:200rpx;
   border:10rpx 10rpx solid #999;
+}
+.couser-list{
+  margin:30rpx 10rpx;
+   height:500rpx;
+}
+
+.course-img{
+  width:345rpx;
+  height:200rpx;
+  margin:5rpx;
+}
+
+.course-more{
+  margin:10rpx 260rpx;
+  text-align: center;
+  background-color: #ff8547;
+  color:#f4f4f4;
+  font-size: 15px;
+  border-radius: 4px;
+
 }

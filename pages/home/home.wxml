@@ -49,7 +49,10 @@
       <view class="color-bar"></view>
       <view>培训课程</view>
     </view>
-    <view></view>
+    <view class="couser-list" >
+    <image class="course-img" wx:for="{{courseLIst}}" src = "{{item.src}}"></image>
+    <view class="course-more">更多课程</view>
+    </view>
   </view>
   <!--最新岗位 -->
   <view></view>

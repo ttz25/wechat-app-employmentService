@@ -41,6 +41,27 @@ Page({
     '省财政厅 省人离资源社会保障厅 关于发发发阿发发发',
     '某某市人离资源社会保障局 关于落实求职创业就业',
     '某某市万山区第一批异地扶贫搬迁工程 抽签'
+    ],
+    courseLIst:[{
+      id:"1",
+      name:"课程1",
+      src:'../images/course1.png'
+    },
+      {
+        id: "2",
+        name: "课程2",
+        src: '../images/course2.png'
+      },
+      {
+        id: "3",
+        name: "课程3",
+        src: '../images/course3.png'
+      },
+      {
+        id: "4",
+        name: "课程4",
+        src: '../images/course4.png'
+      },
     ]
   },
 
