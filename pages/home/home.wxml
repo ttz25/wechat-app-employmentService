@@ -8,10 +8,10 @@
   </swiper>
   <!--功能菜单 -->
   <view class="categoryList ">
-    <view class="category-info" wx:for="{{categoryList}}">
+    <navigator class="category-info" open-type='switchTab' url="/pages/train/train" wx:for="{{categoryList}}">
       <image class="category-image" src="{{item.src}}"></image>
       <view class="category-text">{{item.name}}</view>
-    </view>
+    </navigator>
   </view>
   <!--通知文字条 -->
   <view class="example">
@@ -50,7 +50,9 @@
       <view>培训课程</view>
     </view>
     <view class="couser-list" >
-    <image class="course-img" wx:for="{{courseLIst}}" src = "{{item.src}}"></image>
+    <navigator class="course-nav" open-type='switchTab' wx:for="{{courseLIst}}" url="/pages/train/train">
+    <image class="course-img"  src = "{{item.src}}"></image>
+    </navigator>
     <view class="course-more">更多课程</view>
     </view>
   </view>
