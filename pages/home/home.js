@@ -12,16 +12,20 @@ Page({
     ],
     categoryList:[{
       name: "就业服务",
-      src: "../images/employment.png"
+      src: "../images/employment.png",
+      url: "/pages/train/train"
     },{
       name: "培训",
-      src: "../images/train.png"
+      src: "../images/train.png",
+      url: "/pages/train/train"
     }, {
       name: "求职",
-      src: "../images/job.png"
+      src: "../images/job.png",
+      url:"/pages/job/job"
     }, {
       name: "安置点概览",
-      src: "../images/place.png"
+      src: "../images/place.png",
+      url: "/pages/train/train"
     }],
     text: '就业服务平台上线了，欢迎大家体验！',
     marqueePace: 1,//滚动速度
@@ -62,7 +66,36 @@ Page({
         name: "课程4",
         src: '../images/course4.png'
       },
-    ]
+    ],
+    job:[{
+      name:"置业顾问",
+      know:"null",
+      company:"贵州年利丰置业有限公司",
+      city:"铜仁市",
+      salary:"2500",
+      tips:["五险一金","有提成","有年假","专车接送","车贴","房贴"]
+    }, {
+        name: "置业顾问",
+        know: "null",
+        company: "贵州年利丰置业有限公司",
+        city: "铜仁市",
+        salary: "2500",
+        tips: ["五险一金", "有提成", "有年假", "专车接送", "车贴", "房贴"]
+      }, {
+        name: "置业顾问",
+        know: "null",
+        company: "贵州年利丰置业有限公司",
+        city: "铜仁市",
+        salary: "2500",
+        tips: ["五险一金", "有提成", "有年假", "专车接送", "车贴", "房贴"]
+      }, {
+        name: "置业顾问",
+        know: "null",
+        company: "贵州年利丰置业有限公司",
+        city: "铜仁市",
+        salary: "2500",
+        tips: ["五险一金", "有提成", "有年假", "专车接送", "车贴", "房贴"]
+      }]
   },
 
   /**

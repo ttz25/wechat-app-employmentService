@@ -8,7 +8,7 @@
   </swiper>
   <!--功能菜单 -->
   <view class="categoryList ">
-    <navigator class="category-info" open-type='switchTab' url="/pages/train/train" wx:for="{{categoryList}}">
+    <navigator class="category-info" open-type='switchTab' url="{{item.url}}" wx:for="{{categoryList}}">
       <image class="category-image" src="{{item.src}}"></image>
       <view class="category-text">{{item.name}}</view>
     </navigator>
@@ -45,18 +45,49 @@
 
   <!--培训课程 -->
   <view class="course">
-   <view class="title">
+    <view class="title">
       <view class="color-bar"></view>
       <view>培训课程</view>
     </view>
-    <view class="couser-list" >
-    <navigator class="course-nav" open-type='switchTab' wx:for="{{courseLIst}}" url="/pages/train/train">
-    <image class="course-img"  src = "{{item.src}}"></image>
-    </navigator>
-    <view class="course-more">更多课程</view>
+    <view class="couser-list">
+      <navigator class="course-nav" open-type='switchTab' wx:for="{{courseLIst}}" url="/pages/train/train">
+        <image class="course-img" src="{{item.src}}"></image>
+      </navigator>
+      <navigator open-type='switchTab' url="/pages/train/train">
+        <view class="course-more">更多课程</view>
+      </navigator>
     </view>
   </view>
   <!--最新岗位 -->
-  <view></view>
+  <view>
+  <view class="title">
+      <view class="color-bar"></view>
+      <view>最新岗位</view>
+    </view>
+    <view>
+    <block wx:for="{{job}}" wx:key="">
+      <navigator url="/pages/job/job" open-type='switchTab'>
+        <view class="job-list">
+          <view class="job-info-line">
+            <view class="title">{{item.name}}</view>
+            <view class="left">{{item.know}}</view>
+          </view>
+          <view class="job-info-line">
+            <view>{{item.company}}</view>
+            <view class="left">{{item.city}}</view>
+          </view>
+          <view class="job-info-line">
+            <view class="salary">{{item.salary}}</view>
+            <view class="left">{{item.name}}</view>
+          </view>
+          <view class="job-info-line">
+            <view class="tips">{{item.tips}}</view>
+          </view>
+
+        </view>
+      </navigator>
+    </block>
+    </view>
+  </view>
 
 </scroll-view>

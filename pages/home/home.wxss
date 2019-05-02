@@ -94,9 +94,10 @@
 }
 
 .course{
-  margin:20rpx 0;
-  height:200rpx;
-  border:10rpx 10rpx solid #999;
+  margin:10rpx 0;
+  height:590rpx;
+  border-top:15rpx solid #f4f4f4;
+  border-bottom:15rpx solid #f4f4f4;
 }
 .couser-list{
   margin:30rpx 10rpx;
@@ -125,4 +126,40 @@
   font-size: 15px;
   border-radius: 4px;
 
+}
+
+.job-list{
+  font-size: 35rpx;
+  
+  width: 100%;
+  padding: 30rpx 30rpx;   
+  border-bottom: 1rpx solid #ECECEC;
+  color: #6D6D6D;
+  justify-content: space-between;
+}
+.job-info-line{
+  display:flex;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.job-info-line .left{
+    display: inline-block;
+  margin-left: 200rpx;
+  color:#999;
+}
+
+.job-info-line .title{
+  width:375rpx;
+  color:#353535;
+}
+
+
+.job-info-line .salary{
+  color:#ff8547;
+}
+
+.job-info-line .tips{
+  color:#61daa5;
+  background-color: #bcf0d9;
 }
